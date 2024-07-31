@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+  .navbar {
+    @apply fixed left-0 top-0 z-50 flex h-[70px] w-full items-center border-b-2 border-primary bg-gradient-to-l from-violet-900 via-violet-600 to-violet-900;
+  }
+  .dropdownMenu {
+    @apply absolute -left-20 top-6 z-[99999] hidden w-[200px] flex-col gap-4 rounded-xl bg-white/30 p-4 shadow-md backdrop-blur-[8px] transition-all group-hover:block;
+  }
+  .dropdownText {
+    @apply text-lg font-semibold capitalize text-black transition-all hover:text-primary;
+  }
+  .textTitle {
+    @apply text-6xl font-extrabold tracking-wider max-md:w-full max-md:text-center max-md:text-4xl;
+  }
+}
